@@ -13,6 +13,28 @@ int dataDayNbr
 int scorePast 
 str name
 int timePast = 0 
+int add = 0 
+int avgConcentration 
+int timeSpent 
+bool correct 
+
+ #calculate avg concentration time 
+for i in range(size)
+	add = add + i
+	avgConcentration = add/size 
+
+#has the person gone over the average concentration time 
+if (timeSpent > avgConcentration)
+	print( raw_input('Do you want to take a break now? (yes/no)')
+	x = raw_input('Do you want to take a break now? (yes/no)')
+	if (x=="yes")
+		correct = True 
+	else if (x == "no")
+		correct = False
+	else 
+		print( raw_input('Do you want to take a break now? (yes/no)')
+		x = raw_input('Do you want to take a break now? (yes/no)')
+
 
 #calculate time past
 if  (datetime.datetime.now() - predictDuration >= startTime)
@@ -22,7 +44,8 @@ if  (datetime.datetime.now() - predictDuration >= startTime)
 #is this a task that normally takes longer than anticipated 
 for i in range()
 if (taskName == name.casefold())
-	int avgTimePast =  
+	for j in range ()
+	int avgTimePast = 
 
 
 #determine threshold 
