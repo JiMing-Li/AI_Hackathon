@@ -1,3 +1,5 @@
+import datetime
+
 #assign variables 
 int points
 bool timeForBreak
@@ -6,9 +8,25 @@ bool takeBreak
 int threshold 
 bool thresh 
 int timeToEnd
+int completeNumber 
+int dataDayNbr  
+int scorePast 
+str name
+int timePast = 0 
+
+#calculate time past
+if  (datetime.datetime.now() - predictDuration >= startTime)
+	int failedEnd = startTime + predictDuration
+	timePast =  datetime.datetime.now() - failedEnd 
+
+#is this a task that normally takes longer than anticipated 
+for i in range()
+if (taskName == name.casefold())
+	int avgTimePast =  
+
 
 #determine threshold 
-int avg  
+int avg = completeNumber/dataDayNbr 
 threshold = 0.5*avg 
 
 #should I take a break?
@@ -25,7 +43,6 @@ points = predictDuration * (1/ timeToEnd)
 
 #rank tasks using MergeSort 
 taskPoints = []
-for i in range(taskNumber)
 
 #MergeSort 
 
