@@ -21,7 +21,7 @@ y = np.asarray(data[0:n, 1], dtype = float)
 z = np.polyfit(x, y, 4)
 print(z)
 
-m=0
+m=n
 while data[m, 2] == "Sport":
 	m+=1
 
@@ -30,19 +30,21 @@ x2 = np.asarray(data[n:m, 0], dtype = float)
 y2 = np.asarray(data[n:m, 1], dtype = float)
 #x_new = np.linspace(x[0], x[-1], num=len(x)*10)
 
-a = np.polyfit(x, y, 4)
+a = np.polyfit(x2, y2, 4)
 print(a)
 
-o=0
-while data[o, 2] == "Leisure":
-	m+=1
+o=m
+while data[(o), 2] == "Leisure":
+	o+=1
+	if o>= len(data):
+		break
 
 #fake data
-x2 = np.asarray(data[m:o, 0], dtype = float)
-y2 = np.asarray(data[m:o, 1], dtype = float)
+x3 = np.asarray(data[m:(o), 0], dtype = float)
+y3 = np.asarray(data[m:(o), 1], dtype = float)
 #x_new = np.linspace(x[0], x[-1], num=len(x)*10)
 
-b = np.polyfit(x, y, 4)
+b = np.polyfit(x3, y3, 4)
 print(b)
 
 
